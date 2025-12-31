@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Khezia Kate L. Andrade | Simple Purple Portfolio</title><style>
+:root{
+    --bg:#1b102d;
+    --card:#24123d;
+    --accent:#c084fc;
+    --text:#f5f3ff;
+    --muted:#d8b4fe;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1b102d,#2e1065);
+    color:var(--text);
+    min-height:100vh;
+}
+
+/* FLOATING ANIMATION */
+@keyframes float{
+    0%{transform:translateY(0)}
+    50%{transform:translateY(-8px)}
+    100%{transform:translateY(0)}
+}
+
+header{
+    text-align:center;
+    padding:90px 20px 70px;
+}
+
+header h1{
+    font-size:46px;
+    color:var(--accent);
+}
+
+header p{
+    margin-top:12px;
+    color:var(--muted);
+    font-size:18px;
+}
+
+section{
+    max-width:1000px;
+    margin:50px auto;
+    padding:0 25px;
+}
+
+.card{
+    background:var(--card);
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:35px;
+    box-shadow:0 25px 55px rgba(0,0,0,0.45);
+    transition:all 0.35s ease;
+    animation:float 6s ease-in-out infinite;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 35px 75px rgba(192,132,252,0.5);
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#c084fc,#a855f7);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:38px;
+    font-weight:bold;
+}
+
+.skills span{
+    display:block;
+    height:10px;
+    border-radius:10px;
+    background:linear-gradient(135deg,#c084fc,#a855f7);
+    margin-bottom:15px;
+    width:0;
+    animation:fill 2s forwards;
+}
+
+@keyframes fill{
+    to{width:var(--level)}
+}
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    color:var(--muted);
+}
+</style></head>
+<body><header>
+    <h1>Khezia Kate L. Andrade</h1>
+    <p>Student • Creative Learner • Aspiring Professional</p>
+</header><section>
+    <div class="card profile">
+        <div class="avatar">KA</div>
+        <p>
+            I am Khezia Kate L. Andrade, 18 years old Computer Science a motivated student who values learning,
+            creativity, and personal growth. This e-portfolio highlights my
+            academic background, skills, and experiences.
+        </p>
+    </div><div class="card">
+    <h2>Skills</h2><br>
+    <div class="skills">
+        <span style="--level:85%"></span>
+        <span style="--level:75%"></span>
+        <span style="--level:65%"></span>
+    </div>
+    <p>Communication • Creativity • Teamwork • Time Management</p>
+</div>
+
+<div class="card">
+    <h2>Education</h2><br>
+    <p>
+        Currently pursuing my studies with a focus on developing both
+        technical and personal skills for future career opportunities.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Goals</h2><br>
+    <p>
+        To continuously improve my abilities and become a confident,
+        responsible, and successful professional.
+    </p>
+</div>
+
+</section><footer>
+    Khezia Kate L. Andrade | Simple Purple Portfolio
+</footer></body>
+</html>
